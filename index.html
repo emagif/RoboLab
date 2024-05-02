@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 <body>
 <section class="header">
     <nav>
         <a href="index.html"><img src="" alt="RoboLab's logo"></a>
-        <div class="nav-links">
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="">O NAS</a></li>
                 <li><a href="">PROJEKTY</a></li>
@@ -22,15 +24,106 @@
                 <li><a href="">HOME</a></li>
             </ul>
         </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
 
 <div class="text-box">
-    <h1>Zajrzyj do świata robotyki</h1>
+    <h1>Zajrzyj do świata robotyki z RoboLab</h1>
     <p>Spróbuj wejść do świata robotyki, mechaniki, druku 3D, systemów wbudowanych i informatyki razem z nami!</p>
-    <a href="">Odwiedź nas żeby dowiedzieć się więcej</a>
+    <a href="" class="hero-btn">Odwiedź nas żeby dowiedzieć się więcej</a>
 </div>
 
 
 </section>
+
+<!-- Sekcja O nas -->
+
+<section class="onas">
+    <h1>O nas</h1>
+    <p>Hej! Jesteśmy grupą studentów Politechniki Gdańskiej, którzy pałają pasją do budowania i prototypowania urządzeń na zawody robotów. Zaczęliśmy naszą działalność w kwietniu 2024 roku i dopiero stawiamy nasze pierwsze kroki w świecie konkursów robotów. Jeżeli chcesz nas wesprzeć, zajrzyj w zakładkę "Kontakt".</p>
+
+    <div class="row">
+        <div class="onas-col">
+            <h3>Opiekun</h3>
+            <p>Naszym opiekunem naukowym jest Pan Doktor inżynier Robert Smyk. Adiunkt i naukowiec wydziału Elektrotechniki i Automatyki Politechniki Gdańskiej. Specjalista w dziedzinie informatyki i systemów wbudowanych. </p>
+        </div>
+
+        <div class="onas-col">
+            <h3>Członkowie zespołu</h3>
+            <p>Lorem ipsum itd</p>
+        </div>
+    </div>
+</section>
+
+<!--Sekcja Projekty -->
+<section class="projekt">
+    <h1>Projekty</h1>
+
+    <div class="row">
+        <div class="projekt-col">
+            <img src="images/projekt1.jpg" alt="tutaj jpg projektu">
+            <div class="layer">
+                <h3>Bear Rescue</h3>
+            </div>
+        </div>
+
+        <div class="projekt-col">
+            <img src="images/projekt2.jpg" alt="tutaj jpg projektu">
+            <div class="layer">
+                <h3>Line Follower</h3>
+            </div>
+        </div>
+
+        <div class="projekt-col">
+            <img src="images/projekt3.jpg" alt="tutaj jpg projektu">
+            <div class="layer">
+                <h3>Sumo</h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Sekcja Cel -->
+
+<section class="cel">
+    <h1>Nasz cel</h1>
+    <p>Naszym celem jest nauka szerokiej gamy umiejętności inżynierskich poprzez tworzenie projektów. Wierzymy, że jesteśmy w stanie posiąść trudne do zdobycia umiejętności jedynie poprzez tworzenie. W przyszłości chcemy reprezentować naszą uczelnię na lokalnych i krajowych zawodach robotów. Trzymajcie kciuki i śledźcie nasze postępy!</p>
+
+    <div class="row">
+        <div class="cel-col">
+            <img src="images/cel1.jpg" alt="Nasze zdjęcie podczas tworzenia projektu">
+            <h3>Nasz zespół pracujący w pocie czoła :D</h3>
+            <p>Zdjęcie z jednego z naszych spotkań</p>
+        </div>
+
+        <div class="cel-col">
+            <img src="images/cel2.jpg" alt="Nasze zdjęcie podczas tworzenia projektu">
+            <h3>Nasz zespół pracujący w pocie czoła :D</h3>
+            <p>Zdjęcie z jednego z naszych spotkań *omawiamy jaką pizzę zamówić*</p>
+        </div>
+        
+        <div class="cel-col">
+            <img src="images/cel3.jpg" alt="Nasze zdjęcie podczas tworzenia projektu">
+            <h3>Nasz zespół pracujący w pocie czoła :D</h3>
+            <p>Zdjęcie z jednego z naszych spotkań</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Sekcja dołączenia -->
+
+<section class="kontakt">
+    <h1>Dołącz do nas i spróbuj na co Cię stać!</h1>
+    <a href="">KONTAKT</a>
+</section>
+
+
+
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
